@@ -1,5 +1,5 @@
 # Script to ingest multi-tabbed Excel xlsx files into Exasol
-# 2020-01-15 mpl PEV-1440
+# 2020-01-15 mpl
 
 import os
 import pandas as pd
@@ -13,6 +13,7 @@ start_time = time.perf_counter()
 
 # set working directory, target file, staging csv file
 os.chdir(r'\\filepath')
+file = 'target.xlsx'
 staging_csv = 'test.csv'
 destinationSchema = 'DEV'
 destinationTable = 'CMS_HRRP_ImportData'
